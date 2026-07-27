@@ -33,41 +33,61 @@
   .serif{font-family:"Iowan Old Style","Palatino","Georgia",serif}
   .icon{width:1.15em;height:1.15em;vertical-align:-0.2em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 
-  .main{flex:1;display:flex;align-items:center;gap:52px;padding:36px 60px 16px;min-height:0}
+  .main{flex:1;display:flex;align-items:center;gap:46px;padding:26px 56px 12px;min-height:0}
 
   /* ---------- left column ---------- */
   .left{flex:1.1;display:flex;flex-direction:column;align-items:flex-start;min-width:0}
-  .logo{height:84px;border-radius:20px;box-shadow:0 8px 24px rgba(0,0,0,.22);margin-bottom:26px}
+  .logo{height:62px;border-radius:15px;box-shadow:0 8px 24px rgba(0,0,0,.22);margin-bottom:18px}
   .badge{
     display:inline-flex;align-items:center;gap:9px;
     background:var(--amber);color:var(--ink);padding:10px 22px;border-radius:999px;
     font-size:14px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
   }
-  h1{font-size:56px;line-height:1.05;font-weight:700;margin:22px 0 14px;letter-spacing:-.01em}
+  h1{font-size:46px;line-height:1.05;font-weight:700;margin:16px 0 10px;letter-spacing:-.01em}
   h1 em{font-style:italic;color:var(--amber)}
-  .sub{font-size:20px;color:rgba(255,255,255,.85);max-width:520px;line-height:1.55;margin-bottom:30px}
+  .sub{font-size:18px;color:rgba(255,255,255,.85);max-width:500px;line-height:1.45;margin-bottom:16px}
+
+  /* ---------- next class panel ---------- */
+  .next-class{
+    display:flex;align-items:center;gap:20px;align-self:stretch;max-width:600px;
+    background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.25);
+    border-left:5px solid var(--amber);
+    border-radius:16px;padding:12px 20px;margin-bottom:14px;
+  }
+  .nc-label{
+    font-size:12.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--amber);margin-bottom:3px;display:flex;align-items:center;gap:7px;
+  }
+  .nc-time{font-size:34px;font-weight:800;line-height:1;letter-spacing:-.01em}
+  .nc-day{font-size:16px;font-weight:600;color:rgba(255,255,255,.9);margin-top:4px}
+  .nc-right{margin-left:auto;text-align:right}
+  .nc-count{
+    font-size:15px;font-weight:700;color:var(--ink);background:var(--amber);
+    border-radius:999px;padding:8px 16px;display:inline-block;white-space:nowrap;
+  }
+  .nc-seats{font-size:13.5px;color:rgba(255,255,255,.75);margin-top:7px}
 
   /* ---------- QR card ---------- */
   .qr-card{
     background:#fff;color:var(--ink);border-radius:26px;box-shadow:0 24px 60px rgba(0,0,0,.32);
-    padding:26px 30px;display:flex;align-items:center;gap:26px;
+    padding:20px 24px;display:flex;align-items:center;gap:22px;
     animation:breathe 3s ease-in-out infinite;
   }
   @keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.015)}}
-  .qr-box{width:210px;height:210px;flex-shrink:0;display:grid;place-items:center}
+  .qr-box{width:172px;height:172px;flex-shrink:0;display:grid;place-items:center}
   .qr-box svg{width:100%;height:100%;display:block}
   .qr-text{max-width:300px}
-  .qr-title{font-size:33px;font-weight:800;line-height:1.15;margin-bottom:10px}
+  .qr-title{font-size:28px;font-weight:800;line-height:1.15;margin-bottom:8px}
   .qr-title .strike{position:relative;opacity:.45;margin-right:2px}
   .qr-title .strike::after{
     content:"";position:absolute;left:-4%;right:-4%;top:52%;height:3px;
     background:var(--amber);border-radius:2px;transform:rotate(-6deg);
   }
-  .qr-how{font-size:16px;color:var(--ink-soft);line-height:1.5;margin-bottom:14px}
+  .qr-how{font-size:15px;color:var(--ink-soft);line-height:1.45;margin-bottom:12px}
   .qr-promo{
     display:inline-flex;align-items:center;gap:8px;
     background:#FFF6E5;border:1.5px dashed var(--amber);border-radius:12px;
-    padding:9px 14px;font-size:14.5px;font-weight:700;color:var(--ink);
+    padding:8px 13px;font-size:14px;font-weight:700;color:var(--ink);white-space:nowrap;
   }
   .qr-promo .icon{color:var(--amber)}
   .qr-promo b{background:var(--amber);padding:2px 10px;border-radius:7px;letter-spacing:.05em}
@@ -75,7 +95,7 @@
   /* ---------- right column: photo ---------- */
   .right{flex:.9;display:flex;align-items:center;justify-content:center;min-width:0}
   .photo{
-    width:100%;max-width:480px;aspect-ratio:4/4.4;border-radius:28px;position:relative;overflow:hidden;
+    width:100%;max-width:480px;aspect-ratio:4/4.1;border-radius:28px;position:relative;overflow:hidden;
     box-shadow:0 30px 70px rgba(0,0,0,.35);transform:rotate(1.5deg);
     background:rgba(255,255,255,.08);
   }
@@ -90,7 +110,7 @@
   /* ---------- bottom detail strip ---------- */
   .strip{
     display:flex;justify-content:center;gap:14px;flex-wrap:wrap;
-    padding:0 40px 30px;flex-shrink:0;
+    padding:0 40px 22px;flex-shrink:0;
   }
   .chip{
     display:inline-flex;align-items:center;gap:8px;
@@ -101,11 +121,14 @@
   .chip b{color:var(--amber)}
 
   @media (orientation:portrait){
-    .main{flex-direction:column;justify-content:center;gap:34px;padding:44px 44px 10px;overflow:auto}
+    /* stack the columns; flex:0 0 auto stops the photo column collapsing to zero height */
+    .main{flex-direction:column;justify-content:center;gap:26px;padding:36px 44px 10px;overflow:auto}
+    .left,.right{flex:0 0 auto;width:100%}
     .left{align-items:center;text-align:center}
-    h1{font-size:48px}
+    h1{font-size:44px}
     .sub{margin-left:auto;margin-right:auto}
-    .photo{max-width:420px;aspect-ratio:4/2.8;transform:none}
+    .next-class{align-self:auto;width:100%;max-width:560px}
+    .photo{max-width:460px;aspect-ratio:4/2.6;transform:none}
   }
 </style>
 </head>
@@ -127,6 +150,17 @@
     <div class="badge">Exclusively for today's tour guests</div>
     <h1 class="serif">The tour ends.<br><em>The feast doesn't.</em></h1>
     <p class="sub">Come back to Trastevere and learn to make fresh pasta by hand with a local Roman chef.</p>
+    <div class="next-class">
+      <div>
+        <div class="nc-label"><svg class="icon" viewBox="0 0 24 24" style="width:15px;height:15px"><use href="#i-clock"/></svg>Next class</div>
+        <div class="nc-time" id="ncTime">18:00</div>
+        <div class="nc-day" id="ncDay">Today</div>
+      </div>
+      <div class="nc-right">
+        <span class="nc-count" id="ncCount">Starts soon</span>
+        <div class="nc-seats" id="ncSeats">Scan to check availability</div>
+      </div>
+    </div>
     <div class="qr-card">
       <div class="qr-box" id="qrBox"></div>
       <div class="qr-text">
@@ -2462,6 +2496,15 @@ const CONFIG = {
 
   fromPrice  : "€73",
 
+  /* Class start times, 24h "HH:MM", in the iPad's own local time.
+     Add more as you open them, e.g. ["10:30","18:00"] — the panel
+     always shows the next one that hasn't started yet. */
+  classTimes : ["18:00"],
+
+  /* Stop showing a class as "today" this many minutes before it starts
+     (guests can't realistically make it) — it rolls to the next one. */
+  cutoffMins : 30,
+
   /* Tour-guest offer. Create the code in FareHarbor (Promotions) first.
      Set promoCode to "" to hide the promo pill. */
   promoCode  : "TOURGUEST10",
@@ -2482,6 +2525,40 @@ if (CONFIG.promoCode) {
 } else {
   document.getElementById("promoPill").style.display = "none";
 }
+
+/* ---------- next class panel ----------
+   Reads the iPad's own clock, so it stays right without any server.
+   Rolls to tomorrow once the last class of the day is within cutoffMins. */
+function updateNextClass(){
+  const now = new Date();
+  const times = CONFIG.classTimes.map(t=>{
+    const [h,m] = t.split(":").map(Number);
+    const d = new Date(now); d.setHours(h,m,0,0);
+    return {label:t, date:d};
+  }).sort((a,b)=>a.date-b.date);
+
+  const cutoff = CONFIG.cutoffMins*60000;
+  let next = times.find(t => t.date - now > cutoff);
+  let isToday = true;
+  if(!next){                                   // all of today's gone — first class tomorrow
+    next = {label:times[0].label, date:new Date(times[0].date.getTime()+86400000)};
+    isToday = false;
+  }
+
+  document.getElementById("ncTime").textContent = next.label;
+  document.getElementById("ncDay").textContent  = isToday
+    ? "Today · " + now.toLocaleDateString(undefined,{weekday:"long"})
+    : "Tomorrow · " + next.date.toLocaleDateString(undefined,{weekday:"long"});
+
+  const mins = Math.round((next.date - now)/60000);
+  const h = Math.floor(mins/60), m = mins%60;
+  document.getElementById("ncCount").textContent =
+    mins < 60  ? `Starts in ${mins} min`
+  : mins < 600 ? `Starts in ${h}h ${m.toString().padStart(2,"0")}m`
+  :              `Starts in ${h} hours`;
+}
+updateNextClass();
+setInterval(updateNextClass, 30000);   // keep the countdown honest all evening
 
 /* Build the QR code from CONFIG.bookingUrl (generated on-device, offline-safe) */
 const qr = qrcode(0, "M");
